@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZALLORDER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #ff0000; /* Red background */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .price-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+    .price-item {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 2px solid #e5e5e5;
+      width: 30%;
+    }
+    .price-item h3 {
+      font-size: 20px;
+      color: #ff0000; /* Red heading */
+    }
+    .price-item p {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+    .order-btn {
+      background-color: #128c7e; /* WhatsApp green */
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .order-btn:hover {
+      background-color: #25d366;
+    }
+    .price-item select, .price-item input {
+      padding: 8px;
+      margin: 10px 0;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .price-item .order-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price-item .order-wrapper .order-btn {
+      width: 40%;
+    }
+    /* Tabel Daftar Harga dengan Warna Hijau dan Teks Hitam */
+    .price-item table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .price-item table th, .price-item table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    .price-item table th {
+      background-color: #808080; /* Abu-abu */
+      color: black; /* Teks hitam */
+    }
+    .price-item table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .price-item table tr:nth-child(odd) {
+      background-color: #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di ZALLORDER</h1>
+    <p>Pesan Diamond, Pulsa, dan Layanan lainnya dengan mudah</p>
+  </header>
+
+  <div class="container">
+    <h2>Daftar Harga</h2>
+    <div class="price-list">
+
+      <!-- Free Fire -->
+      <div class="price-item">
+        <h3>Diamond Free Fire</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nominal</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>5 Diamond</td><td>Rp935</td></tr>
+            <tr><td>12 Diamond</td><td>Rp1.995</td></tr>
+            <tr><td>50 Diamond</td><td>Rp6.885</td></tr>
+            <tr><td>70 Diamond</td><td>Rp9.585</td></tr>
+            <tr><td>200 Diamond</td><td>Rp27.000</td></tr>
+            <tr><td>500 Diamond</td><td>Rp67.500</td></tr>
+            <tr><td>1000 Diamond</td><td>Rp135.000</td></tr>
+            <tr><td>2000 Diamond</td><td>Rp230.000</td></tr>
+            <tr><td>5000 Diamond</td><td>Rp575.000</td></tr>
+            <tr><td>10.000 Diamond</td><td>Rp1.000.000</td></tr>
+          </tbody>
+        </table>
+        <div class="order-wrapper">
+          <select id="ff-diamonds">
+            <option value="935">5 Diamond</option>
+            <option value="1995">12 Diamond</option>
+            <option value="6885">50 Diamond</option>
+            <option value="9585">70 Diamond</option>
+            <option value="27000">200 Diamond</option>
+            <option value="67500">500 Diamond</option>
+            <option value="135000">1000 Diamond</option>
+            <option value="230000">2000 Diamond</option>
+            <option value="575000">5000 Diamond</option>
+            <option value="1000000">10.000 Diamond</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Diamond%20Free%20Fire%20sebesar%20Rp" id="ff-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Mobile Legends -->
+      <div class="price-item">
+        <h3>Diamond Mobile Legends</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nominal</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>5 Diamond</td><td>Rp1.560</td></tr>
+            <tr><td>12 Diamond</td><td>Rp3.640</td></tr>
+            <tr><td>50 Diamond</td><td>Rp14.200</td></tr>
+            <tr><td>100 Diamond</td><td>Rp28.400</td></tr>
+            <tr><td>200 Diamond</td><td>Rp57.600</td></tr>
+            <tr><td>384 Diamond</td><td>Rp107.536</td></tr>
+            <tr><td>500 Diamond</td><td>Rp134.200</td></tr>
+            <tr><td>1000 Diamond</td><td>Rp268.400</td></tr>
+            <tr><td>2000 Diamond</td><td>Rp536.800</td></tr>
+            <tr><td>3000 Diamond</td><td>Rp805.200</td></tr>
+          </tbody>
+        </table>
+        <div class="order-wrapper">
+          <select id="ml-diamonds">
+            <option value="1560">5 Diamond</option>
+            <option value="3640">12 Diamond</option>
+            <option value="14200">50 Diamond</option>
+            <option value="28400">100 Diamond</option>
+            <option value="57600">200 Diamond</option>
+            <option value="107536">384 Diamond</option>
+            <option value="134200">500 Diamond</option>
+            <option value="268400">1000 Diamond</option>
+            <option value="536800">2000 Diamond</option>
+            <option value="805200">3000 Diamond</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Diamond%20Mobile%20Legends%20sebesar%20Rp" id="ml-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Isi Saldo DANA -->
+      <div class="price-item">
+        <h3>Isi Saldo DANA</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nominal</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Rp10.000</td><td>Rp10.000</td></tr>
+            <tr><td>Rp25.000</td><td>Rp25.000</td></tr>
+            <tr><td>Rp50.000</td><td>Rp50.000</td></tr>
+            <tr><td>Rp100.000</td><td>Rp100.000</td></tr>
+            <tr><td>Rp200.000</td><td>Rp200.000</td></tr>
+            <tr><td>Rp500.000</td><td>Rp500.000</td></tr>
+            <tr><td>Rp1.000.000</td><td>Rp1.000.000</td></tr>
+          </tbody>
+        </table>
+        <div class="order-wrapper">
+          <select id="dana-balance">
+            <option value="10000">Rp10.000</option>
+            <option value="25000">Rp25.000</option>
+            <option value="50000">Rp50.000</option>
+            <option value="100000">Rp100.000</option>
+            <option value="200000">Rp200.000</option>
+            <option value="500000">Rp500.000</option>
+            <option value="1000000">Rp1.000.000</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Isi%20Saldo%20DANA%20Rp" id="dana-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Isi Saldo Gopay -->
+      <div class="price-item">
+        <h3>Isi Saldo Gopay</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nominal</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Rp10.000</td><td>Rp10.000</td></tr>
+            <tr><td>Rp25.000</td><td>Rp25.000</td></tr>
+            <tr><td>Rp50.000</td><td>Rp50.000</td></tr>
+            <tr><td>Rp100.000</td><td>Rp100.000</td></tr>
+            <tr><td>Rp200.000</td><td>Rp200.000</td></tr>
+            <tr><td>Rp500.000</td><td>Rp500.000</td></tr>
+            <tr><td>Rp1.000.000</td><td>Rp1.000.000</td></tr>
+          </tbody>
+        </table>
+        <div class="order-wrapper">
+          <select id="gopay-balance">
+            <option value="10000">Rp10.000</option>
+            <option value="25000">Rp25.000</option>
+            <option value="50000">Rp50.000</option>
+            <option value="100000">Rp100.000</option>
+            <option value="200000">Rp200.000</option>
+            <option value="500000">Rp500.000</option>
+            <option value="1000000">Rp1.000.000</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Isi%20Saldo%20Gopay%20Rp" id="gopay-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
